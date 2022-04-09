@@ -375,7 +375,7 @@
     },
     "crusader": {
       "Units": [ "Crossbowman", "Pikeman", "EuropArcher" ],
-      "Counts": [ 4, 12, 30 ]
+      "Counts": [ 3, 12, 30 ]
     },
     "deathmatch": {
       "Units": [ "Pikeman", "EuropArcher" ],
@@ -386,15 +386,15 @@
     "Name": "PlayerArab",
     "normal": {
       "Units": [ "ArabSwordsman", "ArabArcher" ],
-      "Counts": [ 3, 6 ]
+      "Counts": [ 3, 5 ]
     },
     "crusader": {
       "Units": [ "FireThrower", "ArabSwordsman", "ArabArcher" ],
-      "Counts": [ 4, 12, 30 ]
+      "Counts": [ 3, 12, 25 ]
     },
     "deathmatch": {
       "Units": [ "ArabSwordsman", "ArabArcher" ],
-      "Counts": [ 3, 6 ]
+      "Counts": [ 3, 5 ]
     }
   }
 }
