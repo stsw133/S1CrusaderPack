@@ -1,0 +1,375 @@
+﻿{
+  "description": {
+    "English": "The UCP start troops configuration fixes unused defense troops, overflow of defense limits and missing defense types in crusader game mode by replacing some of the vanilla troops as follows:
+- Caliph now also starts with fire throwers and Arabian swordsmen in crusader game mode
+- Sultan now also starts with fire throwers in crusader game mode
+- Emir starts with archers instead of horse archers
+- Abbot now starts with less monks and some archers in crusader game mode"
+  },
+  "1": {
+    "Name": "Rat",
+    "Lord": {
+      "StrengthMultiplier": 0.5,
+      "DotCount": 5,
+      "DotColour": "Yellow",
+      "Type": "Europ"
+    },
+    "normal": {
+      "Units": [ "Spearman" ],
+      "Counts": [ 24 ]
+    },
+    "crusader": {
+      "Units": [ "Spearman", "EuropArcher" ],
+      "Counts": [ 120, 80 ]
+    },
+    "deathmatch": {
+      "Units": [ "Spearman" ],
+      "Counts": [ 24 ]
+    }
+  },
+  "2": {
+    "Name": "Snake",
+    "Lord": {
+      "StrengthMultiplier": 0.7,
+      "DotCount": 3,
+      "DotColour": "Yellow",
+      "Type": "Europ"
+    },
+    "normal": {
+      "Units": [ "EuropArcher", "Slinger" ],
+      "Counts": [ 12, 12 ]
+    },
+    "crusader": {
+      "Units": [ "Spearman", "EuropArcher", "Slinger" ],
+      "Counts": [ 80, 80, 80 ]
+    },
+    "deathmatch": {
+      "Units": [ "EuropArcher", "Slinger" ],
+      "Counts": [ 12, 12 ]
+    }
+  },
+  "3": {
+    "Name": "Pig",
+    "Lord": {
+      "StrengthMultiplier": 1,
+      "DotCount": 0,
+      "DotColour": "None",
+      "Type": "Europ"
+    },
+    "normal": {
+      "Units": [ "Maceman" ],
+      "Counts": [ 24 ]
+    },
+    "crusader": {
+      "Units": [ "Crossbowman", "Maceman" ],
+      "Counts": [ 40, 80 ]
+    },
+    "deathmatch": {
+      "Units": [ "Maceman" ],
+      "Counts": [ 24 ]
+    }
+  },
+  "4": {
+    "Name": "Wolf",
+    "Lord": {
+      "StrengthMultiplier": 1.5,
+      "DotCount": 5,
+      "DotColour": "Blue",
+      "Type": "Europ"
+    },
+    "normal": {
+      "Units": [ "Swordsman", "Crossbowman" ],
+      "Counts": [ 8, 16 ]
+    },
+    "crusader": {
+      "Units": [ "Swordsman", "Crossbowman", "Pikeman", "EuropArcher" ],
+      "Counts": [ 20, 20, 12, 40 ]
+    },
+    "deathmatch": {
+      "Units": [ "Swordsman", "Crossbowman" ],
+      "Counts": [ 8, 16 ]
+    }
+  },
+  "5": {
+    "Name": "Saladin",
+    "Lord": {
+      "StrengthMultiplier": 1.4,
+      "DotCount": 4,
+      "DotColour": "Blue",
+      "Type": "Arab"
+    },
+    "normal": {
+      "Units": [ "ArabSwordsman", "ArabArcher" ],
+      "Counts": [ 8, 16 ]
+    },
+    "crusader": {
+      "Units": [ "ArabSwordsman", "ArabArcher" ],
+      "Counts": [ 20, 100 ]
+    },
+    "deathmatch": {
+      "Units": [ "ArabSwordsman", "ArabArcher" ],
+      "Counts": [ 8, 16 ]
+    }
+  },
+  "6": {
+    "Name": "Caliph",
+    "Lord": {
+      "StrengthMultiplier": 1,
+      "DotCount": 0,
+      "DotColour": "None",
+      "Type": "Arab"
+    },
+    "normal": {
+      "Units": [ "ArabSwordsman", "ArabArcher", "FireThrower" ],
+      "Counts": [ 8, 12, 4 ]
+    },
+    "crusader": {
+      "Units": [ "ArabSwordsman", "ArabArcher", "FireThrower" ],
+      "Counts": [ 16, 100, 16 ]
+    },
+    "deathmatch": {
+      "Units": [ "ArabSwordsman", "ArabArcher", "FireThrower" ],
+      "Counts": [ 8, 12, 4 ]
+    }
+  },
+  "7": {
+    "Name": "Sultan",
+    "Lord": {
+      "StrengthMultiplier": 0.9,
+      "DotCount": 1,
+      "DotColour": "Yellow",
+      "Type": "Arab"
+    },
+    "normal": {
+      "Units": [ "FireThrower", "Slinger" ],
+      "Counts": [ 8, 16 ]
+    },
+    "crusader": {
+      "Units": [ "FireThrower", "Slinger", "ArabSwordsman" ],
+      "Counts": [ 16, 112, 40 ]
+    },
+    "deathmatch": {
+      "Units": [ "FireThrower", "Slinger" ],
+      "Counts": [ 8, 16 ]
+    }
+  },
+  "8": {
+    "Name": "Richard",
+    "Lord": {
+      "StrengthMultiplier": 1.4,
+      "DotCount": 4,
+      "DotColour": "Blue",
+      "Type": "Europ"
+    },
+    "normal": {
+      "Units": [ "Swordsman", "EuropArcher" ],
+      "Counts": [ 12, 12 ]
+    },
+    "crusader": {
+      "Units": [ "Swordsman", "EuropArcher", "Knight" ],
+      "Counts": [ 20, 80, 8 ]
+    },
+    "deathmatch": {
+      "Units": [ "Swordsman", "EuropArcher" ],
+      "Counts": [ 12, 12 ]
+    }
+  },
+  "9": {
+    "Name": "Frederick",
+    "Lord": {
+      "StrengthMultiplier": 1.2,
+      "DotCount": 2,
+      "DotColour": "Blue",
+      "Type": "Europ"
+    },
+    "normal": {
+      "Units": [ "Swordsman", "Crossbowman" ],
+      "Counts": [ 12, 12 ]
+    },
+    "crusader": {
+      "Units": [ "Swordsman", "Crossbowman", "EuropArcher" ],
+      "Counts": [ 20, 40, 40 ]
+    },
+    "deathmatch": {
+      "Units": [ "Swordsman", "Crossbowman" ],
+      "Counts": [ 12, 12 ]
+    }
+  },
+  "10": {
+    "Name": "Phillip",
+    "Lord": {
+      "StrengthMultiplier": 0.8,
+      "DotCount": 2,
+      "DotColour": "Yellow",
+      "Type": "Europ"
+    },
+    "normal": {
+      "Units": [ "Knight", "EuropArcher" ],
+      "Counts": [ 8, 16 ]
+    },
+    "crusader": {
+      "Units": [ "Knight", "EuropArcher" ],
+      "Counts": [ 40, 60 ]
+    },
+    "deathmatch": {
+      "Units": [ "Knight", "EuropArcher" ],
+      "Counts": [ 8, 16 ]
+    }
+  },
+  "11": {
+    "Name": "Wazir",
+    "Lord": {
+      "StrengthMultiplier": 1.1,
+      "DotCount": 1,
+      "DotColour": "Blue",
+      "Type": "Arab"
+    },
+    "normal": {
+      "Units": [ "FireThrower", "ArabArcher" ],
+      "Counts": [ 4, 20 ]
+    },
+    "crusader": {
+      "Units": [ "FireThrower", "ArabArcher", "ArabSwordsman" ],
+      "Counts": [ 20, 100, 12 ]
+    },
+    "deathmatch": {
+      "Units": [ "FireThrower", "ArabArcher" ],
+      "Counts": [ 4, 20 ]
+    }
+  },
+  "12": {
+    "Name": "Emir",
+    "Lord": {
+      "StrengthMultiplier": 1,
+      "DotCount": 0,
+      "DotColour": "None",
+      "Type": "Arab"
+    },
+    "normal": {
+      "Units": [ "ArabSwordsman", "ArabArcher", "EuropArcher" ],
+      "Counts": [ 8, 8, 8 ]
+    },
+    "crusader": {
+      "Units": [ "ArabSwordsman", "ArabArcher", "EuropArcher" ],
+      "Counts": [ 16, 64, 32 ]
+    },
+    "deathmatch": {
+      "Units": [ "ArabSwordsman", "ArabArcher", "EuropArcher"  ],
+      "Counts": [ 8, 8, 8 ]
+    }
+  },
+  "13": {
+    "Name": "Nizar",
+    "Lord": {
+      "StrengthMultiplier": 1.3,
+      "DotCount": 3,
+      "DotColour": "Blue",
+      "Type": "Arab"
+    },
+    "normal": {
+      "Units": [ "Assassin", "ArabArcher" ],
+      "Counts": [ 8, 16 ]
+    },
+    "crusader": {
+      "Units": [ "Assassin", "ArabArcher" ],
+      "Counts": [ 40, 80 ]
+    },
+    "deathmatch": {
+      "Units": [ "Assassin", "ArabArcher" ],
+      "Counts": [ 8, 16 ]
+    }
+  },
+  "14": {
+    "Name": "Sheriff",
+    "Lord": {
+      "StrengthMultiplier": 1.1,
+      "DotCount": 1,
+      "DotColour": "Blue",
+      "Type": "Europ"
+    },
+    "normal": {
+      "Units": [ "FireThrower", "Crossbowman", "Maceman" ],
+      "Counts": [ 4, 8, 12 ]
+    },
+    "crusader": {
+      "Units": [ "FireThrower", "Crossbowman", "Maceman" ],
+      "Counts": [ 20, 60, 60 ]
+    },
+    "deathmatch": {
+      "Units": [ "FireThrower", "Crossbowman", "Maceman" ],
+      "Counts": [ 4, 8, 12 ]
+    }
+  },
+  "15": {
+    "Name": "Marshal",
+    "Lord": {
+      "StrengthMultiplier": 1.1,
+      "DotCount": 1,
+      "DotColour": "Blue",
+      "Type": "Europ"
+    },
+    "normal": {
+      "Units": [ "Knight", "EuropArcher" ],
+      "Counts": [ 12, 16 ]
+    },
+    "crusader": {
+      "Units": [ "Knight", "EuropArcher" ],
+      "Counts": [ 40, 100 ]
+    },
+    "deathmatch": {
+      "Units": [ "Knight", "EuropArcher" ],
+      "Counts": [ 12, 16 ]
+    }
+  },
+  "16": {
+    "Name": "Abbot",
+    "Lord": {
+      "StrengthMultiplier": 1.2,
+      "DotCount": 2,
+      "DotColour": "Blue",
+      "Type": "Europ"
+    },
+    "normal": {
+      "Units": [ "Monk" ],
+      "Counts": [ 24 ]
+    },
+    "crusader": {
+      "Units": [ "Monk", "EuropArcher" ],
+      "Counts": [ 48, 80 ]
+    },
+    "deathmatch": {
+      "Units": [ "Monk" ],
+      "Counts": [ 24 ]
+    }
+  },
+  "17": {
+    "Name": "PlayerEurop",
+    "normal": {
+      "Units": [ ],
+      "Counts": [ ]
+    },
+    "crusader": {
+      "Units": [ "Crossbowman", "Pikeman", "EuropArcher" ],
+      "Counts": [ 3, 12, 30 ]
+    },
+    "deathmatch": {
+      "Units": [ "Pikeman", "EuropArcher" ],
+      "Counts": [ 3, 6 ]
+    }
+  },
+  "18": {
+    "Name": "PlayerArab",
+    "normal": {
+      "Units": [ ],
+      "Counts": [ ]
+    },
+    "crusader": {
+      "Units": [ "FireThrower", "ArabSwordsman", "ArabArcher" ],
+      "Counts": [ 3, 12, 25 ]
+    },
+    "deathmatch": {
+      "Units": [ "ArabSwordsman", "ArabArcher" ],
+      "Counts": [ 3, 5 ]
+    }
+  }
+}
