@@ -1,6 +1,6 @@
 {
 	"AICShortDescription": {
-		"English": "stsw AIC based on Krarilotus aggressive AI v1.3 (should be played together with stsw AIV).
+		"English": "stsw AIC inspired by Krarilotus aggressive AI v1.3 (should be played together with stsw AIV).
 
 -General:
 	-All AIs CriticalPopularity set to 6000
@@ -60,7 +60,7 @@ Below is comparison between vanilla and stsw for every AI.
 	-MaxIronmines 0 => 1
 	-MaxWoodcutters 6 => 4
 	-MaxPitchrigs 0 => 0
-	-MaxFarm 6 => 7 (100% AppleFarm)
+	-MaxFarms 6 => 7 (100% AppleFarm)
 	-DoubleRationsFoodThreshold No (0) => Yes (40)
 	-MaxEquipment 20 => 24
 	-SortieUnitRanged 5 EuropArcher => 5 EuropArcher
@@ -83,13 +83,42 @@ Below is comparison between vanilla and stsw for every AI.
 	-AttUnitEngage None => 40 Spearman (10% of total attack force)
 	-AttUnitSiegeDef None => 15 Spearman (3.75% of total attack force)
 	-AttUnitMain 200 Spearman => 200 Spearman (50% of total attack force)
+
+-Snake (#14 in AI ranking):
+	-MaxQuarries 2 => 2
+	-MaxIronmines 1 => 2
+	-MaxWoodcutters 10 => 8
+	-MaxPitchrigs 0 => 0
+	-MaxFarms 10 => 8 (100% AppleFarm)
+	-DoubleRationsFoodThreshold Yes (80) => Yes (40)
+	-MaxEquipment 12 => 48
+	-SortieUnitRanged 2 EuropArcher => 7 EuropArcher
+	-SortieUnitMelee 8 Spearman => 7 Spearman
+	-DefDiggingUnit 20 Spearman => 7 Slave
+	-DefTotal 80 => 56 (DefWalls 50 => 49)
+	-DefUnit 100% EuropArcher => 62.5% EuropArcher, 25% ArabArcher, 12.5% Slinger
+	-RaidUnitBase 30 => 40 (RaidUnitsRandom 10 => 10)
+	-RaidUnit 75% Slave, 25% Slinger => 60% Slave, 40% EuropArcher
+	-HarassingSiegeEngine 1 Catapult => 2 FireBallista
+	-AttForceBase 30 => 35 (AttForceRandom 10 => 7)
+	-SiegeEngine 1 Catapult => 4 Catapult (AttMaxEngineers 2 => 10)
+	-AttDiggingUnit 20 Spearman => 28 Spearman (5% of total attack force)
+	-AttUnitVanguard 20 EuropArcher => 168 EuropArcher (30% of total attack force)
+	-AttMaxAssassins 0 => 0
+	-AttMaxLaddermen 10 => 7 (1.25% of total attack force)
+	-AttMaxTunnelers 0 => 0
+	-AttUnitPatrol None => 28 Slinger (5% of total attack force)
+	-AttUnitBackup 50 ArabArcher => None
+	-AttUnitEngage None => 28 Slinger (5% of total attack force)
+	-AttUnitSiegeDef None => 21 Spearman (3.75% of total attack force)
+	-AttUnitMain 200 Spearman => 280 Spearman (50% of total attack force)
 	
 -Sultan (#15 in AI ranking):
 	-MaxQuarries 2 => 3
 	-MaxIronmines 0 => 3
 	-MaxWoodcutters 15 => 6
 	-MaxPitchrigs 0 => 0
-	-MaxFarm 0 => 0
+	-MaxFarms 0 => 0
 	-DoubleRationsFoodThreshold No (0) => No (0)
 	-MaxEquipment 5 => 0
 	-SortieUnitRanged 3 Slinger => 6 ArabArcher
@@ -341,7 +370,7 @@ Below is comparison between vanilla and stsw for every AI.
 				"MaxWood": 72,
 				"MaxStone": 48,
 				"MaxResourceOther": 12,
-				"MaxEquipment": 24,
+				"MaxEquipment": 48,
 				"MaxBeer": 8,
 				"MaxResourceVariance": 0,
 				"RecruitGoldThreshold": 6,
@@ -381,7 +410,7 @@ Below is comparison between vanilla and stsw for every AI.
 				"SortieUnitRangedMin": 7,
 				"SortieUnitRanged": "EuropArcher",
 				"SortieUnitMeleeMin": 7,
-				"SortieUnitMelee": "Slinger",
+				"SortieUnitMelee": "Spearman",
 				"DefDiggingUnitMax": 7,
 				"DefDiggingUnit": "Slave",
 				"RecruitInterval": 1,

@@ -1,5 +1,5 @@
 stsw AIV based on EvreyImproved and Tatha castles (should be played together with stsw AIC).
-Castles are not fit for original skirmish campaigns - in some cases AI may not have enough people or even barracks to recruit units.
+Castles can be used for original skirmish campaigns, but in some cases AI may not have enough place for all buildings (at least they always have most important buildings).
 
 Below is list of buildings for every AI.
 
@@ -22,6 +22,28 @@ Below is list of buildings for every AI.
 	-Low walls
 	-Low crenels
 	-Stairs
+
+-Snake (#14 in AI ranking):
+	-2x Stockpile
+	-1x Granary
+	-2x Armoury
+	-1x Trading post
+	-1x Barracks
+	-1x Mercenary post
+	-1x Engineer guild
+	-5x House
+	-3x Well
+	-4x Fletcher
+	-4x Poleturner
+	-1x Tower3
+	-2x Tower2
+	-1x Tower1 (usually)
+	-3x Small gatehouse
+	-High walls
+	-Low walls
+	-Stairs
+	-3x Drawbridge (usually)
+	-Moat
 	
 -Sultan (#15 in AI ranking):
 	-2x Stockpile
