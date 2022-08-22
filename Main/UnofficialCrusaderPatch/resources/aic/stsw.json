@@ -25,7 +25,7 @@
 	-All AIs MinimumGoodsRequiredAfterTrade set to 0
 	-All AIs DoubleRationsFoodThreshold set to 40 if they use double rations or 0 if they don't
 	-All AIs MaxWood set to 72
-	-All AIs MaxStone set to 48
+	-All AIs MaxStone set to 72
 	-All AIs MaxResourceOther set to 12
 	-All AIs MaxBeer set to 8
 	-All AIs MaxResourceVariance set to 0
@@ -73,17 +73,17 @@ Below is comparison between vanilla and stsw for every AI.
 	-HarassingSiegeEngine None => 1 Catapult
 	-AttForceBase 20 => 25 (AttForceRandom 10 => 5)
 	-SiegeEngine None => 1 Catapult (AttMaxEngineers 0 => 4)
-	-AttDiggingUnit 20 Spearman => 20 Spearman (5% of total attack force)
-	-AttUnitVanguard None => 120 EuropArcher (30% of total attack force)
+	-AttDiggingUnit 20 Spearman => 15 Spearman (6% of total attack force)
+	-AttUnitVanguard None => 75 EuropArcher (30% of total attack force)
 	-AttMaxAssassins 0 => 0
-	-AttMaxLaddermen 0 => 5 (1.25% of total attack force)
+	-AttMaxLaddermen 0 => 5 (2% of total attack force)
 	-AttMaxTunnelers 0 => 0
-	-AttUnitPatrol None => None
+	-AttUnitPatrol None => 25 EuropArcher (10% of total attack force)
 	-AttUnitBackup None => None
-	-AttUnitEngage None => 40 Spearman (10% of total attack force)
-	-AttUnitSiegeDef None => 15 Spearman (3.75% of total attack force)
-	-AttUnitMain 200 Spearman => 200 Spearman (50% of total attack force)
-
+	-AttUnitEngage None => 25 Spearman (10% of total attack force)
+	-AttUnitSiegeDef None => 5 Spearman (2% of total attack force)
+	-AttUnitMain 200 Spearman => 100 Spearman (40% of total attack force)
+	
 -Snake (#14 in AI ranking):
 	-MaxQuarries 2 => 2
 	-MaxIronmines 1 => 2
@@ -102,16 +102,132 @@ Below is comparison between vanilla and stsw for every AI.
 	-HarassingSiegeEngine 1 Catapult => 2 FireBallista
 	-AttForceBase 30 => 35 (AttForceRandom 10 => 7)
 	-SiegeEngine 1 Catapult => 4 Catapult (AttMaxEngineers 2 => 10)
-	-AttDiggingUnit 20 Spearman => 28 Spearman (5% of total attack force)
-	-AttUnitVanguard 20 EuropArcher => 168 EuropArcher (30% of total attack force)
+	-AttDiggingUnit 20 Spearman => 21 Spearman (6% of total attack force)
+	-AttUnitVanguard 20 EuropArcher => 105 EuropArcher (30% of total attack force)
 	-AttMaxAssassins 0 => 0
-	-AttMaxLaddermen 10 => 7 (1.25% of total attack force)
+	-AttMaxLaddermen 10 => 7 (2% of total attack force)
 	-AttMaxTunnelers 0 => 0
-	-AttUnitPatrol None => 28 Slinger (5% of total attack force)
+	-AttUnitPatrol None => 35 Slinger (10% of total attack force)
 	-AttUnitBackup 50 ArabArcher => None
-	-AttUnitEngage None => 28 Slinger (5% of total attack force)
-	-AttUnitSiegeDef None => 21 Spearman (3.75% of total attack force)
-	-AttUnitMain 200 Spearman => 280 Spearman (50% of total attack force)
+	-AttUnitEngage None => 35 Slinger (10% of total attack force)
+	-AttUnitSiegeDef None => 7 Spearman (2% of total attack force)
+	-AttUnitMain 200 Spearman => 140 Spearman (40% of total attack force)
+	
+-Pig (#10 in AI ranking):
+	-MaxQuarries 2 => 3
+	-MaxIronmines 4 => 5
+	-MaxWoodcutters 8 => 10
+	-MaxPitchrigs 1 => 0
+	-MaxFarms 12 => 12 (100% DairyFarm)
+	-DoubleRationsFoodThreshold Yes (60) => Yes (40)
+	-MaxEquipment 10 => 16
+	-SortieUnitRanged 4 Crossbowman => 11 Crossbowman
+	-SortieUnitMelee 5 Maceman => 11 Maceman
+	-DefDiggingUnit None => 11 Maceman
+	-DefTotal 40 => 88 (DefWalls 30 => 55)
+	-DefUnit 100% Crossbowman => 87.5% Crossbowman, 12.5% Maceman
+	-RaidUnitBase 10 => 24 (RaidUnitsRandom 5 => 6)
+	-RaidUnit 100% Maceman => 100% Maceman
+	-HarassingSiegeEngine 2 Catapult => 4 Catapult
+	-AttForceBase 10 => 55 (AttForceRandom 10 => 11)
+	-SiegeEngine 3 Catapult, 1 BatteringRam => 4 Trebuchet, 4 BatteringRam (AttMaxEngineers 10 => 30)
+	-AttDiggingUnit 10 Maceman => 33 Maceman (6% of total attack force)
+	-AttUnitVanguard None => 165 Crossbowman (30% of total attack force)
+	-AttMaxAssassins 0 => 0
+	-AttMaxLaddermen 0 => 11 (2% of total attack force)
+	-AttMaxTunnelers 0 => 0
+	-AttUnitPatrol None => 55 Crossbowman (10% of total attack force)
+	-AttUnitBackup 5 None => None
+	-AttUnitEngage None => 55 Maceman (10% of total attack force)
+	-AttUnitSiegeDef None => 11 Maceman (2% of total attack force)
+	-AttUnitMain 200 Maceman => 220 Spearman (40% of total attack force)
+	
+-Wolf (#1 in AI ranking):
+	-MaxQuarries 6 => 4
+	-MaxIronmines 3 => 10
+	-MaxWoodcutters 12 => 16
+	-MaxPitchrigs 2 => 4
+	-MaxFarms 10 => 16 (62.5% AppleFarm, 37.5% DairyFarm)
+	-DoubleRationsFoodThreshold Yes (30) => Yes (40)
+	-MaxEquipment 10 => 7
+	-SortieUnitRanged 8 ArabArcher => 20 ArabArcher
+	-SortieUnitMelee 6 Pikeman => 20 Pikeman
+	-DefDiggingUnit 8 Pikeman => 20 Pikeman
+	-DefTotal 100 => 160 (DefWalls 80 => 140)
+	-DefUnit 50% Crossbowman, 50% EuropArcher => 62.5% Crossbowman, 12.5% EuropArcher, 12.5% ArabArcher, 12.5% FireThrower
+	-RaidUnitBase 5 => 32 (RaidUnitsRandom 20 => 8)
+	-RaidUnit 100% HorseArcher => 43% Maceman, 57% HorseArcher
+	-HarassingSiegeEngine 4 Catapult => 4 Catapult, 4 FireBallista
+	-AttForceBase 40 => 100 (AttForceRandom 15 => 20)
+	-SiegeEngine 1 Catapult, 2 Trebuchet, 1 FireBallista => 3 Catapult, 1 Trebuchet, 1 BatteringRam, 1 SiegeTower, 2 FireBallista (AttMaxEngineers 12 => 23)
+	-AttDiggingUnit 20 Pikeman => 60 Pikeman (6% of total attack force)
+	-AttUnitVanguard None => 300 Crossbowman (30% of total attack force)
+	-AttMaxAssassins 0 => 20 (2% of total attack force)
+	-AttMaxLaddermen 0 => 0
+	-AttMaxTunnelers 0 => 0
+	-AttUnitPatrol None => 100 ArabArcher (10% of total attack force)
+	-AttUnitBackup 30 Crossbowman => None
+	-AttUnitEngage None => 100 Pikeman (10% of total attack force)
+	-AttUnitSiegeDef 5 Swordsman => 20 Swordsman (2% of total attack force)
+	-AttUnitMain 200 Swordsman, Pikeman, Pikeman  => 400 Swordsman (40% of total attack force)
+	
+-Saladin (#2 in AI ranking):
+	-MaxQuarries 4 => 4
+	-MaxIronmines 4 => 6
+	-MaxWoodcutters 14 => 12
+	-MaxPitchrigs 1 => 2
+	-MaxFarms 15 => 12 (62.5% WheatFarm, 37.5% AppleFarm)
+	-DoubleRationsFoodThreshold Yes (20) => No (0)
+	-MaxEquipment 5 => 0
+	-SortieUnitRanged 10 ArabArcher => 19 ArabArcher
+	-SortieUnitMelee 7 ArabSwordsman => 19 Assassin
+	-DefDiggingUnit 4 Slave => 19 Slave
+	-DefTotal 70 => 152 (DefWalls 50 => 143)
+	-DefUnit 60% ArabArcher, 20% ArabSwordsman, 20% FireThrower => 75% ArabArcher, 12.5% ArabSwordsman, 12.5% FireThrower, 12.5% FireThrower
+	-RaidUnitBase 10 => 24 (RaidUnitsRandom 5 => 6)
+	-RaidUnit 100% HorseArcher => 100% Assassin
+	-HarassingSiegeEngine 5 Catapult => 4 Catapult, 4 FireBallista
+	-AttForceBase 50 => 95 (AttForceRandom 10 => 19)
+	-SiegeEngine 2 Catapult, 2 FireBallista => 2 Catapult, 1 Trebuchet, 1 BatteringRam, 1 SiegeTower, 3 FireBallista (AttMaxEngineers 10 => 23)
+	-AttDiggingUnit 20 Slave => 57 Slave (6% of total attack force)
+	-AttUnitVanguard 20 HorseArcher => 285 ArabArcher (30% of total attack force)
+	-AttMaxAssassins 5 => 19 (2% of total attack force)
+	-AttMaxLaddermen 0 => 0
+	-AttMaxTunnelers 0 => 0
+	-AttUnitPatrol 20 HorseArcher => 95 HorseArcher (10% of total attack force)
+	-AttUnitBackup 20 ArabArcher => None
+	-AttUnitEngage None => 95 Assassin (10% of total attack force)
+	-AttUnitSiegeDef 6 FireThrower => 19 Assassin (2% of total attack force)
+	-AttUnitMain 200 ArabSwordsman  => 380 ArabSwordsman (40% of total attack force)
+	
+-Caliph (#9 in AI ranking):
+	-MaxQuarries 2 => 3
+	-MaxIronmines 1 => 3
+	-MaxWoodcutters 8 => 9
+	-MaxPitchrigs 10 => 5
+	-MaxFarms 10 => 13 (100% AppleFarm)
+	-DoubleRationsFoodThreshold Yes (50) => Yes (40)
+	-MaxEquipment 5 => 0
+	-SortieUnitRanged 7 ArabArcher => 12 ArabArcher
+	-SortieUnitMelee 5 ArabSwordsman => 12 Assassin
+	-DefDiggingUnit 4 Slave => 12 Slave
+	-DefTotal 60 => 96 (DefWalls 60 => 84)
+	-DefUnit 75% ArabArcher, 25% FireThrower => 75% ArabArcher, 12.5% Assassin, 12.5% FireThrower
+	-RaidUnitBase 30 => 48 (RaidUnitsRandom 30 => 12)
+	-RaidUnit 100% Slave => 100% Slave
+	-HarassingSiegeEngine 1 Catapult, 1 FireBallista => 4 FireBallista
+	-AttForceBase 15 => 60 (AttForceRandom 10 => 12)
+	-SiegeEngine 3 FireBallista => 8 FireBallista (AttMaxEngineers 6 => 18)
+	-AttDiggingUnit 20 Slave => 36 Slave (6% of total attack force)
+	-AttUnitVanguard None => 180 ArabArcher (30% of total attack force)
+	-AttMaxAssassins 0 => 12 (2% of total attack force)
+	-AttMaxLaddermen 0 => 0
+	-AttMaxTunnelers 0 => 0
+	-AttUnitPatrol None => 60 Slinger (10% of total attack force)
+	-AttUnitBackup 40 HorseArcher => None
+	-AttUnitEngage None => 60 Assassin (10% of total attack force)
+	-AttUnitSiegeDef 10 ArabArcher => 12 Assassin (2% of total attack force)
+	-AttUnitMain 200 ArabSwordsman  => 240 ArabSwordsman (40% of total attack force)
 	
 -Sultan (#15 in AI ranking):
 	-MaxQuarries 2 => 3
@@ -131,16 +247,277 @@ Below is comparison between vanilla and stsw for every AI.
 	-HarassingSiegeEngine None => 1 FireBallista
 	-AttForceBase 10 => 30 (AttForceRandom 20 => 6)
 	-SiegeEngine None => 2 FireBallista (AttMaxEngineers 0 => 6)
-	-AttDiggingUnit None => 24 Slave (5% of total attack force)
-	-AttUnitVanguard None => 144 ArabArcher (30% of total attack force)
+	-AttDiggingUnit None => 18 Slave (6% of total attack force)
+	-AttUnitVanguard None => 90 ArabArcher (30% of total attack force)
 	-AttMaxAssassins 0 => 0
 	-AttMaxLaddermen 0 => 0
 	-AttMaxTunnelers 0 => 0
-	-AttUnitPatrol None => 48 Slinger (10% of total attack force)
+	-AttUnitPatrol None => 36 Slinger (12% of total attack force)
 	-AttUnitBackup 120 ArabArcher => None
-	-AttUnitEngage None => 48 Slinger (10% of total attack force)
-	-AttUnitSiegeDef None => 24 ArabSwordsman (5% of total attack force)
-	-AttUnitMain 200 ArabSwordsman => 192 ArabSwordsman (40% of total attack force)"
+	-AttUnitEngage None => 30 Slinger (10% of total attack force)
+	-AttUnitSiegeDef None => 6 ArabSwordsman (2% of total attack force)
+	-AttUnitMain 200 ArabSwordsman => 120 ArabSwordsman (40% of total attack force)
+	
+-Richard (#7 in AI ranking):
+	-MaxQuarries 3 => 3
+	-MaxIronmines 4 => 9
+	-MaxWoodcutters 10 => 12
+	-MaxPitchrigs 0 => 0
+	-MaxFarms 15 => 15 (100% AppleFarm)
+	-DoubleRationsFoodThreshold Yes (40) => Yes (40)
+	-MaxEquipment 10 => 12
+	-SortieUnitRanged 6 EuropArcher => 14 EuropArcher
+	-SortieUnitMelee 6 Pikeman => 14 Pikeman
+	-DefDiggingUnit None => 14 Pikeman
+	-DefTotal 40 => 112 (DefWalls 20 => 98)
+	-DefUnit 66.7% EuropArcher, 33.3% Pikeman => 87.5% EuropArcher, 12.5% Pikeman
+	-RaidUnitBase 10 => 8 (RaidUnitsRandom 4 => 2)
+	-RaidUnit 100% EuropArcher => 100% Knight
+	-HarassingSiegeEngine 2 Catapult => 5 Catapult
+	-AttForceBase 20 => 70 (AttForceRandom 5 => 14)
+	-SiegeEngine 3 Catapult, 2 Trebuchet, 1 BatteringRam => 8 Catapult (AttMaxEngineers 16 => 18)
+	-AttDiggingUnit 6 Pikeman => 42 Pikeman (6% of total attack force)
+	-AttUnitVanguard None => 210 EuropArcher (30% of total attack force)
+	-AttMaxAssassins 0 => 0
+	-AttMaxLaddermen 0 => 0
+	-AttMaxTunnelers 3 => 7 (1% of total attack force)
+	-AttUnitPatrol None => 77 EuropArcher (11% of total attack force)
+	-AttUnitBackup 20 EuropArcher => None
+	-AttUnitEngage None => 70 Swordsman (10% of total attack force)
+	-AttUnitSiegeDef 4 Swordsman => 14 Swordsman (2% of total attack force)
+	-AttUnitMain 200 Swordsman, Pikeman, Pikeman => 280 Pikeman (40% of total attack force)
+	
+-Frederick (#3 in AI ranking):
+	-MaxQuarries 4 => 4
+	-MaxIronmines 5 => 8
+	-MaxWoodcutters 12 => 12
+	-MaxPitchrigs 0 => 0
+	-MaxFarms 12 => 12 (62.5% AppleFarm, 37.5% DairyFarm)
+	-DoubleRationsFoodThreshold Yes (40) => No (0)
+	-MaxEquipment 20 => 10
+	-SortieUnitRanged 12 EuropArcher => 18 Crossbowman
+	-SortieUnitMelee 4 Swordsman => 18 Swordsman
+	-DefDiggingUnit 10 EuropArcher => 18 Spearman
+	-DefTotal 80 => 144 (DefWalls 50 => 126)
+	-DefUnit 66.7% EuropArcher, 33.3% Crossbowman => 87.5% Crossbowman, 12.5% Swordsman
+	-RaidUnitBase 4 => 16 (RaidUnitsRandom 0 => 4)
+	-RaidUnit 100% Knight => 100% Swordsman
+	-HarassingSiegeEngine 2 Catapult => 5 Catapult
+	-AttForceBase 30 => 90 (AttForceRandom 4 => 18)
+	-SiegeEngine 6 Trebuchet => 8 Trebuchet (AttMaxEngineers 18 => 26)
+	-AttDiggingUnit 20 EuropArcher => 54 Spearman (6% of total attack force)
+	-AttUnitVanguard None => 270 Crossbowman (30% of total attack force)
+	-AttMaxAssassins 0 => 0
+	-AttMaxLaddermen 0 => 0
+	-AttMaxTunnelers 0 => 0
+	-AttUnitPatrol 20 Crossbowman => 108 Crossbowman (12% of total attack force)
+	-AttUnitBackup 30 EuropArcher => None
+	-AttUnitEngage None => 9 Knight (1% of total attack force)
+	-AttUnitSiegeDef 10 Crossbowman => 18 Swordsman (2% of total attack force)
+	-AttUnitMain 200 Swordsman => 441 Swordsman (49% of total attack force)
+	
+-Phillip (#11 in AI ranking):
+	-MaxQuarries 1 => 2
+	-MaxIronmines 3 => 5
+	-MaxWoodcutters 10 => 9
+	-MaxPitchrigs 0 => 0
+	-MaxFarms 8 => 12 (62.5% AppleFarm, 37.5% DairyFarm)
+	-DoubleRationsFoodThreshold Yes (50) => No (0)
+	-MaxEquipment 6 => 12
+	-SortieUnitRanged 2 EuropArcher => 10 EuropArcher
+	-SortieUnitMelee 20 Spearman => 10 Pikeman
+	-DefDiggingUnit 4 Spearman => 10 Pikeman
+	-DefTotal 20 => 80 (DefWalls 4 => 70)
+	-DefUnit 83.3% EuropArcher, 16.7% Knight => 87.5% EuropArcher, 12.5% Pikeman
+	-RaidUnitBase 4 => 12 (RaidUnitsRandom 4 => 3)
+	-RaidUnit 100% Knight => 50% Knight, 50% Pikeman
+	-HarassingSiegeEngine 1 Catapult => 3 Catapult
+	-AttForceBase 10 => 50 (AttForceRandom 20 => 10)
+	-SiegeEngine None => 4 Catapult, 4 Trebuchet (AttMaxEngineers 0 => 22)
+	-AttDiggingUnit 60 Spearman => 30 Pikeman (6% of total attack force)
+	-AttUnitVanguard None => 150 EuropArcher (30% of total attack force)
+	-AttMaxAssassins 0 => 0
+	-AttMaxLaddermen 0 => 0
+	-AttMaxTunnelers 0 => 0
+	-AttUnitPatrol None => 50 EuropArcher (10% of total attack force)
+	-AttUnitBackup None => None
+	-AttUnitEngage None => 10 Knight (2% of total attack force)
+	-AttUnitSiegeDef None => 10 Pikeman (2% of total attack force)
+	-AttUnitMain 200 Spearman => 250 Pikeman, Pikeman, Pikeman, Monk (50% of total attack force)
+	
+-Wazir (#4 in AI ranking):
+	-MaxQuarries 3 => 2
+	-MaxIronmines 1 => 4
+	-MaxWoodcutters 10 => 12
+	-MaxPitchrigs 4 => 4
+	-MaxFarms 8 => 12 (100% WheatFarm)
+	-DoubleRationsFoodThreshold Yes (50) => Yes (40)
+	-MaxEquipment 4 => 0
+	-SortieUnitRanged 6 HorseArcher => 17 HorseArcher
+	-SortieUnitMelee 10 ArabSwordsman => 17 ArabSwordsman
+	-DefDiggingUnit 4 Slave => 17 Slave
+	-DefTotal 40 => 136 (DefWalls 40 => 119)
+	-DefUnit 50% ArabArcher, 50% FireThrower => 75% ArabArcher, 25% FireThrower
+	-RaidUnitBase 30 => 32 (RaidUnitsRandom 10 => 8)
+	-RaidUnit 100% HorseArcher => 100% HorseArcher
+	-HarassingSiegeEngine 4 FireBallista => 7 FireBallista
+	-AttForceBase 40 => 85 (AttForceRandom 5 => 17)
+	-SiegeEngine 1 Trebuchet, 3 FireBallista => 4 Trebuchet, 4 FireBallista (AttMaxEngineers 9 => 22)
+	-AttDiggingUnit 15 Slave => 51 Slave (6% of total attack force)
+	-AttUnitVanguard None => None
+	-AttMaxAssassins 0 => 0
+	-AttMaxLaddermen 0 => 0
+	-AttMaxTunnelers 0 => 0
+	-AttUnitPatrol None => 357 HorseArcher (42% of total attack force)
+	-AttUnitBackup 80 HorseArcher => None
+	-AttUnitEngage 10 FireThrower => 85 ArabSwordsman (10% of total attack force)
+	-AttUnitSiegeDef None => 17 FireThrower (2% of total attack force)
+	-AttUnitMain 200 ArabSwordsman => 340 ArabSwordsman (40% of total attack force)
+	
+-Emir (#8 in AI ranking):
+	-MaxQuarries 4 => 4
+	-MaxIronmines 3 => 7
+	-MaxWoodcutters 10 => 10
+	-MaxPitchrigs 0 => 1
+	-MaxFarms 16 => 13 (62.5% DairyFarm, 37.5% WheatFarm)
+	-DoubleRationsFoodThreshold Yes (40) => No (0)
+	-MaxEquipment 4 => 12
+	-SortieUnitRanged 4 ArabArcher => 13 EuropArcher
+	-SortieUnitMelee 20 ArabSwordsman => 13 ArabSwordsman
+	-DefDiggingUnit 4 EuropArcher => 13 EuropArcher
+	-DefTotal 50 => 104 (DefWalls 50 => 91)
+	-DefUnit 50% EuropArcher, 50% ArabArcher => 50% ArabArcher, 37.5% EuropArcher, 12.5% ArabSwordsman
+	-RaidUnitBase 30 => 24 (RaidUnitsRandom 10 => 6)
+	-RaidUnit 100% ArabSwordsman => 100% Maceman
+	-HarassingSiegeEngine 2 Catapult, 1 FireBallista => 5 Catapult
+	-AttForceBase 30 => 65 (AttForceRandom 10 => 13)
+	-SiegeEngine 2 Catapult, 1 TowerBallista => 6 Catapult, 2 SiegeTower (AttMaxEngineers 6 => 22)
+	-AttDiggingUnit 15 EuropArcher => 39 Spearman (6% of total attack force)
+	-AttUnitVanguard None => 195 Maceman (30% of total attack force)
+	-AttMaxAssassins 0 => 0
+	-AttMaxLaddermen 0 => 13 (2% of total attack force)
+	-AttMaxTunnelers 0 => 0
+	-AttUnitPatrol None => 65 HorseArcher (10% of total attack force)
+	-AttUnitBackup 80 HorseArcher => None
+	-AttUnitEngage None => 65 Spearman (10% of total attack force)
+	-AttUnitSiegeDef None => 13 ArabSwordsman (2% of total attack force)
+	-AttUnitMain 200 ArabSwordsman => 260 ArabSwordsman (40% of total attack force)
+	
+-Nizar (#12 in AI ranking):
+	-MaxQuarries 1 => 2
+	-MaxIronmines 2 => 2
+	-MaxWoodcutters 12 => 10
+	-MaxPitchrigs 1 => 2
+	-MaxFarms 16 => 10 (100% WheatFarm)
+	-DoubleRationsFoodThreshold Yes (30) => No (0)
+	-MaxEquipment 4 => 0
+	-SortieUnitRanged 5 ArabArcher => 9 ArabArcher
+	-SortieUnitMelee 15 ArabArcher => 9 Assassin
+	-DefDiggingUnit 60 Slave => 9 Slave
+	-DefTotal 80 => 72 (DefWalls 80 => 63)
+	-DefUnit 100% ArabArcher => 75% ArabArcher, 12.5% Assassin, 12.5% FireThrower
+	-RaidUnitBase 5 => 24 (RaidUnitsRandom 5 => 6)
+	-RaidUnit 100% Assassin => 100% Assassin
+	-HarassingSiegeEngine None => 3 FireBallista
+	-AttForceBase 40 => 45 (AttForceRandom 0 => 9)
+	-SiegeEngine None => 3 Catapult, 4 FireBallista (AttMaxEngineers 0 => 16)
+	-AttDiggingUnit 20 Slave => 27 Slave (6% of total attack force)
+	-AttUnitVanguard None => 135 ArabArcher (30% of total attack force)
+	-AttMaxAssassins 40 => 144 (32% of total attack force)
+	-AttMaxLaddermen 0 => 0
+	-AttMaxTunnelers 0 => 0
+	-AttUnitPatrol None => None
+	-AttUnitBackup None => None
+	-AttUnitEngage None => 45 Assassin (10% of total attack force)
+	-AttUnitSiegeDef None => 9 Assassin (2% of total attack force)
+	-AttUnitMain 200 Assassin => 90 Assassin (20% of total attack force)
+	
+-Sheriff (#6 in AI ranking):
+	-MaxQuarries 3 => 3
+	-MaxIronmines 6 => 6
+	-MaxWoodcutters 10 => 12
+	-MaxPitchrigs 4 => 3
+	-MaxFarms 10 => 15 (62.5% DairyFarm, 37.5% AppleFarm)
+	-DoubleRationsFoodThreshold Yes (40) => No (0)
+	-MaxEquipment 10 => 10
+	-SortieUnitRanged 10 Crossbowman => 15 Crossbowman
+	-SortieUnitMelee 10 Maceman => 15 Assassin
+	-DefDiggingUnit 4 Maceman => 15 Maceman
+	-DefTotal 50 => 120 (DefWalls 40 => 105)
+	-DefUnit 60% Crossbowman, 20% Assassin, 20% FireThrower => 75% Crossbowman, 12.5% Assassin, 12.5% FireThrower
+	-RaidUnitBase 10 => 24 (RaidUnitsRandom 4 => 6)
+	-RaidUnit 100% Maceman => 50% Maceman, 50% Assassin
+	-HarassingSiegeEngine 3 Catapult, 2 FireBallista => 6 FireBallista
+	-AttForceBase 50 => 75 (AttForceRandom 20 => 15)
+	-SiegeEngine 2 Catapult, 3 FireBallista => 6 Catapult, 2 BatteringRam (AttMaxEngineers 10 => 22)
+	-AttDiggingUnit 80 Slave => 45 Maceman (6% of total attack force)
+	-AttUnitVanguard 10 Maceman => 225 Crossbowman (30% of total attack force)
+	-AttMaxAssassins 10 => 12 (1.6% of total attack force)
+	-AttMaxLaddermen 0 => 3 (0.4% of total attack force)
+	-AttMaxTunnelers 0 => 0
+	-AttUnitPatrol None => 75 Slinger (10% of total attack force)
+	-AttUnitBackup 50 Crossbowman => None
+	-AttUnitEngage None => 75 Pikeman (10% of total attack force)
+	-AttUnitSiegeDef 6 Maceman => 15 Assassin (2% of total attack force)
+	-AttUnitMain 200 Maceman => 300 Maceman (40% of total attack force)
+	
+-Marshal (#13 in AI ranking):
+	-MaxQuarries 1 => 1
+	-MaxIronmines 3 => 5
+	-MaxWoodcutters 8 => 9
+	-MaxPitchrigs 0 => 0
+	-MaxFarms 9 => 9 (100% AppleFarm)
+	-DoubleRationsFoodThreshold Yes (80) => No (0)
+	-MaxEquipment 10 => 16
+	-SortieUnitRanged 4 EuropArcher => 8 EuropArcher
+	-SortieUnitMelee 4 Knight => 8 Knight
+	-DefDiggingUnit 4 EuropArcher => 8 EuropArcher
+	-DefTotal 40 => 64 (DefWalls 30 => 56)
+	-DefUnit 100% EuropArcher => 87.5% EuropArcher, 12.5% Knight
+	-RaidUnitBase 16 => 12 (RaidUnitsRandom 4 => 3)
+	-RaidUnit 100% Knight => 50% Knight, 50% EuropArcher
+	-HarassingSiegeEngine 1 Catapult => 2 Catapult
+	-AttForceBase 10 => 40 (AttForceRandom 20 => 8)
+	-SiegeEngine 2 Trebuchet => 5 Trebuchet (AttMaxEngineers 6 => 17)
+	-AttDiggingUnit 20 EuropArcher => 24 EuropArcher (6% of total attack force)
+	-AttUnitVanguard None => 120 EuropArcher (30% of total attack force)
+	-AttMaxAssassins 0 => 0
+	-AttMaxLaddermen 0 => 0
+	-AttMaxTunnelers 0 => 4 (1% of total attack force)
+	-AttUnitPatrol None => 76 EuropArcher (19% of total attack force)
+	-AttUnitBackup 30 EuropArcher => None
+	-AttUnitEngage None => 8 Knight (2% of total attack force)
+	-AttUnitSiegeDef None => 8 Swordsman (2% of total attack force)
+	-AttUnitMain 200 Swordsman => 160 Swordsman (40% of total attack force)
+	
+-Abbot (#5 in AI ranking):
+	-MaxQuarries 4 => 4
+	-MaxIronmines 2 => 4
+	-MaxWoodcutters 10 => 12
+	-MaxPitchrigs 0 => 4
+	-MaxFarms 12 => 12 (100% WheatFarm)
+	-DoubleRationsFoodThreshold Yes (40) => No (0)
+	-MaxEquipment 4 => 16
+	-SortieUnitRanged 4 EuropArcher => 16 EuropArcher
+	-SortieUnitMelee 20 Monk => 16 Monk
+	-DefDiggingUnit 4 EuropArcher => 16 EuropArcher
+	-DefTotal 30 => 128 (DefWalls 30 => 112)
+	-DefUnit 100% EuropArcher => 87.5% EuropArcher, 12.5% Monk
+	-RaidUnitBase 30 => 36 (RaidUnitsRandom 10 => 9)
+	-RaidUnit 100% Monk => 75% Monk, 25% EuropArcher
+	-HarassingSiegeEngine 5 Catapult => 2 Catapult, 4 FireBallista
+	-AttForceBase 50 => 80 (AttForceRandom 10 => 16)
+	-SiegeEngine 4 Catapult => 2 BatteringRam, 2 SiegeTower, 4 FireBallista (AttMaxEngineers 8 => 26)
+	-AttDiggingUnit 10 EuropArcher => 48 EuropArcher (6% of total attack force)
+	-AttUnitVanguard None => 240 EuropArcher (30% of total attack force)
+	-AttMaxAssassins 0 => 0
+	-AttMaxLaddermen 0 => 0
+	-AttMaxTunnelers 0 => 0
+	-AttUnitPatrol None => 96 EuropArcher (12% of total attack force)
+	-AttUnitBackup 40 EuropArcher => None
+	-AttUnitEngage None => 80 Swordsman (10% of total attack force)
+	-AttUnitSiegeDef None => 16 Monk (2% of total attack force)
+	-AttUnitMain 200 Monk => 320 Monk (40% of total attack force)"
 	},
 	"AICharacters": [
 		{
@@ -192,7 +569,7 @@ Below is comparison between vanilla and stsw for every AI.
 				"MinimumGoodsRequiredAfterTrade": 0,
 				"DoubleRationsFoodThreshold": 40,
 				"MaxWood": 72,
-				"MaxStone": 48,
+				"MaxStone": 72,
 				"MaxResourceOther": 12,
 				"MaxEquipment": 24,
 				"MaxBeer": 8,
@@ -293,28 +670,28 @@ Below is comparison between vanilla and stsw for every AI.
 				"Unknown142": 0,
 				"AttMaxEngineers": 4,
 				"AttDiggingUnit": "Spearman",
-				"AttDiggingUnitMax": 20,
+				"AttDiggingUnitMax": 15,
 				"AttUnitVanguard": "EuropArcher",
-				"AttUnitVanguardMax": 120,
+				"AttUnitVanguardMax": 75,
 				"AttMaxAssassins": 0,
 				"AttMaxLaddermen": 5,
 				"AttMaxTunnelers": 0,
-				"AttUnitPatrol": "None",
-				"AttUnitPatrolMax": 0,
-				"AttUnitPatrolGroupsCount": 0,
+				"AttUnitPatrol": "EuropArcher",
+				"AttUnitPatrolMax": 25,
+				"AttUnitPatrolGroupsCount": 1,
 				"AttUnitBackup": "None",
 				"AttUnitBackupMax": 0,
 				"AttUnitBackupGroupsCount": 0,
 				"AttUnitEngage": "Spearman",
-				"AttUnitEngageMax": 40,
+				"AttUnitEngageMax": 25,
 				"AttUnitSiegeDef": "Spearman",
-				"AttUnitSiegeDefMax": 15,
+				"AttUnitSiegeDefMax": 5,
 				"AttUnitSiegeDefGroupsCount": 1,
 				"AttUnitMain1": "Spearman",
 				"AttUnitMain2": "Spearman",
 				"AttUnitMain3": "Spearman",
 				"AttUnitMain4": "Spearman",
-				"AttMaxDefault": 200,
+				"AttMaxDefault": 100,
 				"AttMainGroupsCount": 2,
 				"TargetChoice": "Closest"
 			}
@@ -368,7 +745,7 @@ Below is comparison between vanilla and stsw for every AI.
 				"MinimumGoodsRequiredAfterTrade": 0,
 				"DoubleRationsFoodThreshold": 40,
 				"MaxWood": 72,
-				"MaxStone": 48,
+				"MaxStone": 72,
 				"MaxResourceOther": 12,
 				"MaxEquipment": 48,
 				"MaxBeer": 8,
@@ -469,28 +846,28 @@ Below is comparison between vanilla and stsw for every AI.
 				"Unknown142": 0,
 				"AttMaxEngineers": 10,
 				"AttDiggingUnit": "Spearman",
-				"AttDiggingUnitMax": 28,
+				"AttDiggingUnitMax": 21,
 				"AttUnitVanguard": "EuropArcher",
-				"AttUnitVanguardMax": 168,
+				"AttUnitVanguardMax": 105,
 				"AttMaxAssassins": 0,
 				"AttMaxLaddermen": 7,
 				"AttMaxTunnelers": 0,
 				"AttUnitPatrol": "Slinger",
-				"AttUnitPatrolMax": 28,
+				"AttUnitPatrolMax": 35,
 				"AttUnitPatrolGroupsCount": 1,
 				"AttUnitBackup": "None",
 				"AttUnitBackupMax": 0,
 				"AttUnitBackupGroupsCount": 0,
 				"AttUnitEngage": "Slinger",
-				"AttUnitEngageMax": 28,
+				"AttUnitEngageMax": 35,
 				"AttUnitSiegeDef": "Spearman",
-				"AttUnitSiegeDefMax": 21,
+				"AttUnitSiegeDefMax": 7,
 				"AttUnitSiegeDefGroupsCount": 1,
 				"AttUnitMain1": "Spearman",
 				"AttUnitMain2": "Spearman",
 				"AttUnitMain3": "Spearman",
 				"AttUnitMain4": "Spearman",
-				"AttMaxDefault": 280,
+				"AttMaxDefault": 140,
 				"AttMainGroupsCount": 2,
 				"TargetChoice": "Closest"
 			}
@@ -544,7 +921,7 @@ Below is comparison between vanilla and stsw for every AI.
 				"MinimumGoodsRequiredAfterTrade": 0,
 				"DoubleRationsFoodThreshold": 40,
 				"MaxWood": 72,
-				"MaxStone": 48,
+				"MaxStone": 72,
 				"MaxResourceOther": 12,
 				"MaxEquipment": 16,
 				"MaxBeer": 8,
@@ -645,28 +1022,28 @@ Below is comparison between vanilla and stsw for every AI.
 				"Unknown142": 0,
 				"AttMaxEngineers": 30,
 				"AttDiggingUnit": "Maceman",
-				"AttDiggingUnitMax": 44,
+				"AttDiggingUnitMax": 33,
 				"AttUnitVanguard": "Crossbowman",
-				"AttUnitVanguardMax": 264,
+				"AttUnitVanguardMax": 165,
 				"AttMaxAssassins": 0,
 				"AttMaxLaddermen": 11,
 				"AttMaxTunnelers": 0,
-				"AttUnitPatrol": "None",
-				"AttUnitPatrolMax": 0,
-				"AttUnitPatrolGroupsCount": 0,
+				"AttUnitPatrol": "Crossbowman",
+				"AttUnitPatrolMax": 55,
+				"AttUnitPatrolGroupsCount": 1,
 				"AttUnitBackup": "None",
 				"AttUnitBackupMax": 0,
 				"AttUnitBackupGroupsCount": 0,
 				"AttUnitEngage": "Maceman",
-				"AttUnitEngageMax": 88,
+				"AttUnitEngageMax": 55,
 				"AttUnitSiegeDef": "Maceman",
-				"AttUnitSiegeDefMax": 33,
+				"AttUnitSiegeDefMax": 11,
 				"AttUnitSiegeDefGroupsCount": 1,
 				"AttUnitMain1": "Maceman",
 				"AttUnitMain2": "Maceman",
 				"AttUnitMain3": "Maceman",
 				"AttUnitMain4": "Maceman",
-				"AttMaxDefault": 440,
+				"AttMaxDefault": 220,
 				"AttMainGroupsCount": 2,
 				"TargetChoice": "Closest"
 			}
@@ -720,7 +1097,7 @@ Below is comparison between vanilla and stsw for every AI.
 				"MinimumGoodsRequiredAfterTrade": 0,
 				"DoubleRationsFoodThreshold": 40,
 				"MaxWood": 72,
-				"MaxStone": 48,
+				"MaxStone": 72,
 				"MaxResourceOther": 12,
 				"MaxEquipment": 7,
 				"MaxBeer": 8,
@@ -821,28 +1198,28 @@ Below is comparison between vanilla and stsw for every AI.
 				"Unknown142": 0,
 				"AttMaxEngineers": 23,
 				"AttDiggingUnit": "Pikeman",
-				"AttDiggingUnitMax": 80,
+				"AttDiggingUnitMax": 60,
 				"AttUnitVanguard": "Crossbowman",
-				"AttUnitVanguardMax": 240,
+				"AttUnitVanguardMax": 300,
 				"AttMaxAssassins": 20,
 				"AttMaxLaddermen": 0,
 				"AttMaxTunnelers": 0,
 				"AttUnitPatrol": "ArabArcher",
-				"AttUnitPatrolMax": 240,
+				"AttUnitPatrolMax": 100,
 				"AttUnitPatrolGroupsCount": 1,
 				"AttUnitBackup": "None",
 				"AttUnitBackupMax": 0,
 				"AttUnitBackupGroupsCount": 0,
 				"AttUnitEngage": "Pikeman",
-				"AttUnitEngageMax": 160,
+				"AttUnitEngageMax": 100,
 				"AttUnitSiegeDef": "Swordsman",
-				"AttUnitSiegeDefMax": 60,
+				"AttUnitSiegeDefMax": 20,
 				"AttUnitSiegeDefGroupsCount": 1,
 				"AttUnitMain1": "Swordsman",
 				"AttUnitMain2": "Swordsman",
 				"AttUnitMain3": "Swordsman",
 				"AttUnitMain4": "Swordsman",
-				"AttMaxDefault": 800,
+				"AttMaxDefault": 400,
 				"AttMainGroupsCount": 2,
 				"TargetChoice": "Closest"
 			}
@@ -896,7 +1273,7 @@ Below is comparison between vanilla and stsw for every AI.
 				"MinimumGoodsRequiredAfterTrade": 0,
 				"DoubleRationsFoodThreshold": 0,
 				"MaxWood": 72,
-				"MaxStone": 48,
+				"MaxStone": 72,
 				"MaxResourceOther": 12,
 				"MaxEquipment": 0,
 				"MaxBeer": 8,
@@ -997,28 +1374,28 @@ Below is comparison between vanilla and stsw for every AI.
 				"Unknown142": 0,
 				"AttMaxEngineers": 23,
 				"AttDiggingUnit": "Slave",
-				"AttDiggingUnitMax": 76,
+				"AttDiggingUnitMax": 57,
 				"AttUnitVanguard": "ArabArcher",
-				"AttUnitVanguardMax": 228,
+				"AttUnitVanguardMax": 285,
 				"AttMaxAssassins": 19,
 				"AttMaxLaddermen": 0,
 				"AttMaxTunnelers": 0,
 				"AttUnitPatrol": "HorseArcher",
-				"AttUnitPatrolMax": 228,
+				"AttUnitPatrolMax": 95,
 				"AttUnitPatrolGroupsCount": 1,
 				"AttUnitBackup": "None",
 				"AttUnitBackupMax": 0,
 				"AttUnitBackupGroupsCount": 0,
 				"AttUnitEngage": "Assassin",
-				"AttUnitEngageMax": 152,
+				"AttUnitEngageMax": 95,
 				"AttUnitSiegeDef": "Assassin",
-				"AttUnitSiegeDefMax": 57,
+				"AttUnitSiegeDefMax": 19,
 				"AttUnitSiegeDefGroupsCount": 1,
 				"AttUnitMain1": "ArabSwordsman",
 				"AttUnitMain2": "ArabSwordsman",
 				"AttUnitMain3": "ArabSwordsman",
 				"AttUnitMain4": "ArabSwordsman",
-				"AttMaxDefault": 760,
+				"AttMaxDefault": 380,
 				"AttMainGroupsCount": 2,
 				"TargetChoice": "Closest"
 			}
@@ -1072,7 +1449,7 @@ Below is comparison between vanilla and stsw for every AI.
 				"MinimumGoodsRequiredAfterTrade": 0,
 				"DoubleRationsFoodThreshold": 40,
 				"MaxWood": 72,
-				"MaxStone": 48,
+				"MaxStone": 72,
 				"MaxResourceOther": 12,
 				"MaxEquipment": 0,
 				"MaxBeer": 8,
@@ -1173,28 +1550,28 @@ Below is comparison between vanilla and stsw for every AI.
 				"Unknown142": 0,
 				"AttMaxEngineers": 18,
 				"AttDiggingUnit": "Slave",
-				"AttDiggingUnitMax": 48,
+				"AttDiggingUnitMax": 36,
 				"AttUnitVanguard": "ArabArcher",
-				"AttUnitVanguardMax": 288,
+				"AttUnitVanguardMax": 180,
 				"AttMaxAssassins": 12,
 				"AttMaxLaddermen": 0,
 				"AttMaxTunnelers": 0,
 				"AttUnitPatrol": "Slinger",
-				"AttUnitPatrolMax": 48,
+				"AttUnitPatrolMax": 60,
 				"AttUnitPatrolGroupsCount": 1,
 				"AttUnitBackup": "None",
 				"AttUnitBackupMax": 0,
 				"AttUnitBackupGroupsCount": 0,
 				"AttUnitEngage": "Assassin",
-				"AttUnitEngageMax": 48,
+				"AttUnitEngageMax": 60,
 				"AttUnitSiegeDef": "Assassin",
-				"AttUnitSiegeDefMax": 36,
+				"AttUnitSiegeDefMax": 12,
 				"AttUnitSiegeDefGroupsCount": 1,
 				"AttUnitMain1": "ArabSwordsman",
 				"AttUnitMain2": "ArabSwordsman",
 				"AttUnitMain3": "ArabSwordsman",
 				"AttUnitMain4": "ArabSwordsman",
-				"AttMaxDefault": 480,
+				"AttMaxDefault": 240,
 				"AttMainGroupsCount": 2,
 				"TargetChoice": "Closest"
 			}
@@ -1248,7 +1625,7 @@ Below is comparison between vanilla and stsw for every AI.
 				"MinimumGoodsRequiredAfterTrade": 0,
 				"DoubleRationsFoodThreshold": 0,
 				"MaxWood": 72,
-				"MaxStone": 48,
+				"MaxStone": 72,
 				"MaxResourceOther": 12,
 				"MaxEquipment": 0,
 				"MaxBeer": 8,
@@ -1349,28 +1726,28 @@ Below is comparison between vanilla and stsw for every AI.
 				"Unknown142": 0,
 				"AttMaxEngineers": 6,
 				"AttDiggingUnit": "Slave",
-				"AttDiggingUnitMax": 24,
+				"AttDiggingUnitMax": 18,
 				"AttUnitVanguard": "ArabArcher",
-				"AttUnitVanguardMax": 144,
+				"AttUnitVanguardMax": 90,
 				"AttMaxAssassins": 0,
 				"AttMaxLaddermen": 0,
 				"AttMaxTunnelers": 0,
 				"AttUnitPatrol": "Slinger",
-				"AttUnitPatrolMax": 48,
+				"AttUnitPatrolMax": 36,
 				"AttUnitPatrolGroupsCount": 1,
 				"AttUnitBackup": "None",
 				"AttUnitBackupMax": 0,
 				"AttUnitBackupGroupsCount": 0,
 				"AttUnitEngage": "Slinger",
-				"AttUnitEngageMax": 48,
+				"AttUnitEngageMax": 30,
 				"AttUnitSiegeDef": "ArabSwordsman",
-				"AttUnitSiegeDefMax": 24,
+				"AttUnitSiegeDefMax": 6,
 				"AttUnitSiegeDefGroupsCount": 1,
 				"AttUnitMain1": "ArabSwordsman",
 				"AttUnitMain2": "ArabSwordsman",
 				"AttUnitMain3": "ArabSwordsman",
 				"AttUnitMain4": "ArabSwordsman",
-				"AttMaxDefault": 192,
+				"AttMaxDefault": 120,
 				"AttMainGroupsCount": 2,
 				"TargetChoice": "Closest"
 			}
@@ -1424,7 +1801,7 @@ Below is comparison between vanilla and stsw for every AI.
 				"MinimumGoodsRequiredAfterTrade": 0,
 				"DoubleRationsFoodThreshold": 40,
 				"MaxWood": 72,
-				"MaxStone": 48,
+				"MaxStone": 72,
 				"MaxResourceOther": 12,
 				"MaxEquipment": 12,
 				"MaxBeer": 0,
@@ -1525,28 +1902,28 @@ Below is comparison between vanilla and stsw for every AI.
 				"Unknown142": 0,
 				"AttMaxEngineers": 18,
 				"AttDiggingUnit": "Pikeman",
-				"AttDiggingUnitMax": 56,
+				"AttDiggingUnitMax": 42,
 				"AttUnitVanguard": "EuropArcher",
-				"AttUnitVanguardMax": 336,
+				"AttUnitVanguardMax": 210,
 				"AttMaxAssassins": 0,
 				"AttMaxLaddermen": 0,
-				"AttMaxTunnelers": 14,
-				"AttUnitPatrol": "None",
-				"AttUnitPatrolMax": 0,
-				"AttUnitPatrolGroupsCount": 0,
+				"AttMaxTunnelers": 7,
+				"AttUnitPatrol": "EuropArcher",
+				"AttUnitPatrolMax": 77,
+				"AttUnitPatrolGroupsCount": 1,
 				"AttUnitBackup": "None",
 				"AttUnitBackupMax": 0,
 				"AttUnitBackupGroupsCount": 0,
 				"AttUnitEngage": "Swordsman",
-				"AttUnitEngageMax": 112,
+				"AttUnitEngageMax": 70,
 				"AttUnitSiegeDef": "Swordsman",
-				"AttUnitSiegeDefMax": 42,
+				"AttUnitSiegeDefMax": 14,
 				"AttUnitSiegeDefGroupsCount": 1,
 				"AttUnitMain1": "Pikeman",
 				"AttUnitMain2": "Pikeman",
 				"AttUnitMain3": "Pikeman",
 				"AttUnitMain4": "Pikeman",
-				"AttMaxDefault": 560,
+				"AttMaxDefault": 280,
 				"AttMainGroupsCount": 2,
 				"TargetChoice": "Closest"
 			}
@@ -1600,7 +1977,7 @@ Below is comparison between vanilla and stsw for every AI.
 				"MinimumGoodsRequiredAfterTrade": 0,
 				"DoubleRationsFoodThreshold": 0,
 				"MaxWood": 72,
-				"MaxStone": 48,
+				"MaxStone": 72,
 				"MaxResourceOther": 12,
 				"MaxEquipment": 10,
 				"MaxBeer": 8,
@@ -1701,28 +2078,28 @@ Below is comparison between vanilla and stsw for every AI.
 				"Unknown142": 0,
 				"AttMaxEngineers": 26,
 				"AttDiggingUnit": "Spearman",
-				"AttDiggingUnitMax": 72,
+				"AttDiggingUnitMax": 54,
 				"AttUnitVanguard": "Crossbowman",
-				"AttUnitVanguardMax": 432,
+				"AttUnitVanguardMax": 270,
 				"AttMaxAssassins": 0,
 				"AttMaxLaddermen": 0,
 				"AttMaxTunnelers": 0,
-				"AttUnitPatrol": "None",
-				"AttUnitPatrolMax": 0,
-				"AttUnitPatrolGroupsCount": 0,
+				"AttUnitPatrol": "Crossbowman",
+				"AttUnitPatrolMax": 108,
+				"AttUnitPatrolGroupsCount": 1,
 				"AttUnitBackup": "None",
 				"AttUnitBackupMax": 0,
 				"AttUnitBackupGroupsCount": 0,
 				"AttUnitEngage": "Knight",
-				"AttUnitEngageMax": 8,
+				"AttUnitEngageMax": 9,
 				"AttUnitSiegeDef": "Swordsman",
-				"AttUnitSiegeDefMax": 54,
+				"AttUnitSiegeDefMax": 18,
 				"AttUnitSiegeDefGroupsCount": 1,
 				"AttUnitMain1": "Swordsman",
 				"AttUnitMain2": "Swordsman",
 				"AttUnitMain3": "Swordsman",
 				"AttUnitMain4": "Swordsman",
-				"AttMaxDefault": 874,
+				"AttMaxDefault": 441,
 				"AttMainGroupsCount": 2,
 				"TargetChoice": "Closest"
 			}
@@ -1776,7 +2153,7 @@ Below is comparison between vanilla and stsw for every AI.
 				"MinimumGoodsRequiredAfterTrade": 0,
 				"DoubleRationsFoodThreshold": 0,
 				"MaxWood": 72,
-				"MaxStone": 48,
+				"MaxStone": 72,
 				"MaxResourceOther": 12,
 				"MaxEquipment": 12,
 				"MaxBeer": 8,
@@ -1877,28 +2254,28 @@ Below is comparison between vanilla and stsw for every AI.
 				"Unknown142": 0,
 				"AttMaxEngineers": 22,
 				"AttDiggingUnit": "Pikeman",
-				"AttDiggingUnitMax": 40,
+				"AttDiggingUnitMax": 30,
 				"AttUnitVanguard": "EuropArcher",
-				"AttUnitVanguardMax": 240,
+				"AttUnitVanguardMax": 150,
 				"AttMaxAssassins": 0,
 				"AttMaxLaddermen": 0,
 				"AttMaxTunnelers": 0,
-				"AttUnitPatrol": "None",
-				"AttUnitPatrolMax": 0,
-				"AttUnitPatrolGroupsCount": 0,
+				"AttUnitPatrol": "EuropArcher",
+				"AttUnitPatrolMax": 50,
+				"AttUnitPatrolGroupsCount": 1,
 				"AttUnitBackup": "None",
 				"AttUnitBackupMax": 0,
 				"AttUnitBackupGroupsCount": 0,
 				"AttUnitEngage": "Knight",
 				"AttUnitEngageMax": 10,
 				"AttUnitSiegeDef": "Pikeman",
-				"AttUnitSiegeDefMax": 30,
+				"AttUnitSiegeDefMax": 10,
 				"AttUnitSiegeDefGroupsCount": 1,
 				"AttUnitMain1": "Pikeman",
 				"AttUnitMain2": "Pikeman",
 				"AttUnitMain3": "Pikeman",
 				"AttUnitMain4": "Monk",
-				"AttMaxDefault": 480,
+				"AttMaxDefault": 250,
 				"AttMainGroupsCount": 2,
 				"TargetChoice": "Closest"
 			}
@@ -1952,7 +2329,7 @@ Below is comparison between vanilla and stsw for every AI.
 				"MinimumGoodsRequiredAfterTrade": 0,
 				"DoubleRationsFoodThreshold": 40,
 				"MaxWood": 72,
-				"MaxStone": 48,
+				"MaxStone": 72,
 				"MaxResourceOther": 12,
 				"MaxEquipment": 0,
 				"MaxBeer": 8,
@@ -2053,28 +2430,28 @@ Below is comparison between vanilla and stsw for every AI.
 				"Unknown142": 0,
 				"AttMaxEngineers": 22,
 				"AttDiggingUnit": "Slave",
-				"AttDiggingUnitMax": 68,
-				"AttUnitVanguard": "ArabSwordsman",
-				"AttUnitVanguardMax": 136,
+				"AttDiggingUnitMax": 51,
+				"AttUnitVanguard": "None",
+				"AttUnitVanguardMax": 0,
 				"AttMaxAssassins": 17,
 				"AttMaxLaddermen": 0,
 				"AttMaxTunnelers": 0,
 				"AttUnitPatrol": "HorseArcher",
-				"AttUnitPatrolMax": 680,
+				"AttUnitPatrolMax": 357,
 				"AttUnitPatrolGroupsCount": 1,
 				"AttUnitBackup": "None",
 				"AttUnitBackupMax": 0,
 				"AttUnitBackupGroupsCount": 0,
 				"AttUnitEngage": "ArabSwordsman",
-				"AttUnitEngageMax": 68,
-				"AttUnitSiegeDef": "ArabSwordsman",
-				"AttUnitSiegeDefMax": 51,
+				"AttUnitEngageMax": 85,
+				"AttUnitSiegeDef": "FireThrower",
+				"AttUnitSiegeDefMax": 17,
 				"AttUnitSiegeDefGroupsCount": 1,
 				"AttUnitMain1": "ArabSwordsman",
 				"AttUnitMain2": "ArabSwordsman",
 				"AttUnitMain3": "ArabSwordsman",
 				"AttUnitMain4": "ArabSwordsman",
-				"AttMaxDefault": 408,
+				"AttMaxDefault": 340,
 				"AttMainGroupsCount": 2,
 				"TargetChoice": "Closest"
 			}
@@ -2128,7 +2505,7 @@ Below is comparison between vanilla and stsw for every AI.
 				"MinimumGoodsRequiredAfterTrade": 0,
 				"DoubleRationsFoodThreshold": 0,
 				"MaxWood": 72,
-				"MaxStone": 48,
+				"MaxStone": 72,
 				"MaxResourceOther": 12,
 				"MaxEquipment": 12,
 				"MaxBeer": 8,
@@ -2229,28 +2606,28 @@ Below is comparison between vanilla and stsw for every AI.
 				"Unknown142": 0,
 				"AttMaxEngineers": 22,
 				"AttDiggingUnit": "Spearman",
-				"AttDiggingUnitMax": 52,
+				"AttDiggingUnitMax": 39,
 				"AttUnitVanguard": "Maceman",
-				"AttUnitVanguardMax": 156,
+				"AttUnitVanguardMax": 195,
 				"AttMaxAssassins": 0,
 				"AttMaxLaddermen": 13,
 				"AttMaxTunnelers": 0,
 				"AttUnitPatrol": "HorseArcher",
-				"AttUnitPatrolMax": 312,
+				"AttUnitPatrolMax": 65,
 				"AttUnitPatrolGroupsCount": 1,
 				"AttUnitBackup": "None",
 				"AttUnitBackupMax": 0,
 				"AttUnitBackupGroupsCount": 0,
 				"AttUnitEngage": "Spearman",
-				"AttUnitEngageMax": 26,
+				"AttUnitEngageMax": 65,
 				"AttUnitSiegeDef": "ArabSwordsman",
-				"AttUnitSiegeDefMax": 39,
+				"AttUnitSiegeDefMax": 13,
 				"AttUnitSiegeDefGroupsCount": 1,
 				"AttUnitMain1": "ArabSwordsman",
 				"AttUnitMain2": "ArabSwordsman",
 				"AttUnitMain3": "ArabSwordsman",
 				"AttUnitMain4": "ArabSwordsman",
-				"AttMaxDefault": 520,
+				"AttMaxDefault": 260,
 				"AttMainGroupsCount": 2,
 				"TargetChoice": "Closest"
 			}
@@ -2304,7 +2681,7 @@ Below is comparison between vanilla and stsw for every AI.
 				"MinimumGoodsRequiredAfterTrade": 0,
 				"DoubleRationsFoodThreshold": 0,
 				"MaxWood": 72,
-				"MaxStone": 48,
+				"MaxStone": 72,
 				"MaxResourceOther": 12,
 				"MaxEquipment": 0,
 				"MaxBeer": 8,
@@ -2405,10 +2782,10 @@ Below is comparison between vanilla and stsw for every AI.
 				"Unknown142": 0,
 				"AttMaxEngineers": 16,
 				"AttDiggingUnit": "Slave",
-				"AttDiggingUnitMax": 36,
+				"AttDiggingUnitMax": 27,
 				"AttUnitVanguard": "ArabArcher",
-				"AttUnitVanguardMax": 216,
-				"AttMaxAssassins": 54,
+				"AttUnitVanguardMax": 135,
+				"AttMaxAssassins": 144,
 				"AttMaxLaddermen": 0,
 				"AttMaxTunnelers": 0,
 				"AttUnitPatrol": "None",
@@ -2418,15 +2795,15 @@ Below is comparison between vanilla and stsw for every AI.
 				"AttUnitBackupMax": 0,
 				"AttUnitBackupGroupsCount": 0,
 				"AttUnitEngage": "Assassin",
-				"AttUnitEngageMax": 27,
+				"AttUnitEngageMax": 45,
 				"AttUnitSiegeDef": "Assassin",
-				"AttUnitSiegeDefMax": 27,
+				"AttUnitSiegeDefMax": 9,
 				"AttUnitSiegeDefGroupsCount": 1,
 				"AttUnitMain1": "Assassin",
 				"AttUnitMain2": "Assassin",
 				"AttUnitMain3": "Assassin",
 				"AttUnitMain4": "Assassin",
-				"AttMaxDefault": 360,
+				"AttMaxDefault": 90,
 				"AttMainGroupsCount": 2,
 				"TargetChoice": "Closest"
 			}
@@ -2480,7 +2857,7 @@ Below is comparison between vanilla and stsw for every AI.
 				"MinimumGoodsRequiredAfterTrade": 0,
 				"DoubleRationsFoodThreshold": 0,
 				"MaxWood": 72,
-				"MaxStone": 48,
+				"MaxStone": 72,
 				"MaxResourceOther": 12,
 				"MaxEquipment": 10,
 				"MaxBeer": 8,
@@ -2581,28 +2958,28 @@ Below is comparison between vanilla and stsw for every AI.
 				"Unknown142": 0,
 				"AttMaxEngineers": 22,
 				"AttDiggingUnit": "Maceman",
-				"AttDiggingUnitMax": 60,
+				"AttDiggingUnitMax": 45,
 				"AttUnitVanguard": "Crossbowman",
-				"AttUnitVanguardMax": 360,
+				"AttUnitVanguardMax": 225,
 				"AttMaxAssassins": 12,
 				"AttMaxLaddermen": 3,
 				"AttMaxTunnelers": 0,
 				"AttUnitPatrol": "Slinger",
-				"AttUnitPatrolMax": 30,
+				"AttUnitPatrolMax": 75,
 				"AttUnitPatrolGroupsCount": 1,
 				"AttUnitBackup": "None",
 				"AttUnitBackupMax": 0,
 				"AttUnitBackupGroupsCount": 0,
 				"AttUnitEngage": "Pikeman",
-				"AttUnitEngageMax": 90,
+				"AttUnitEngageMax": 75,
 				"AttUnitSiegeDef": "Assassin",
-				"AttUnitSiegeDefMax": 45,
+				"AttUnitSiegeDefMax": 15,
 				"AttUnitSiegeDefGroupsCount": 1,
 				"AttUnitMain1": "Maceman",
 				"AttUnitMain2": "Maceman",
 				"AttUnitMain3": "Maceman",
 				"AttUnitMain4": "Maceman",
-				"AttMaxDefault": 600,
+				"AttMaxDefault": 300,
 				"AttMainGroupsCount": 2,
 				"TargetChoice": "Closest"
 			}
@@ -2656,7 +3033,7 @@ Below is comparison between vanilla and stsw for every AI.
 				"MinimumGoodsRequiredAfterTrade": 0,
 				"DoubleRationsFoodThreshold": 0,
 				"MaxWood": 72,
-				"MaxStone": 48,
+				"MaxStone": 72,
 				"MaxResourceOther": 12,
 				"MaxEquipment": 16,
 				"MaxBeer": 8,
@@ -2757,28 +3134,28 @@ Below is comparison between vanilla and stsw for every AI.
 				"Unknown142": 0,
 				"AttMaxEngineers": 17,
 				"AttDiggingUnit": "EuropArcher",
-				"AttDiggingUnitMax": 32,
+				"AttDiggingUnitMax": 24,
 				"AttUnitVanguard": "EuropArcher",
-				"AttUnitVanguardMax": 192,
+				"AttUnitVanguardMax": 120,
 				"AttMaxAssassins": 0,
 				"AttMaxLaddermen": 0,
-				"AttMaxTunnelers": 8,
-				"AttUnitPatrol": "None",
-				"AttUnitPatrolMax": 0,
-				"AttUnitPatrolGroupsCount": 0,
+				"AttMaxTunnelers": 4,
+				"AttUnitPatrol": "EuropArcher",
+				"AttUnitPatrolMax": 76,
+				"AttUnitPatrolGroupsCount": 1,
 				"AttUnitBackup": "None",
 				"AttUnitBackupMax": 0,
 				"AttUnitBackupGroupsCount": 0,
-				"AttUnitEngage": "Tunneler",
-				"AttUnitEngageMax": 64,
+				"AttUnitEngage": "Knight",
+				"AttUnitEngageMax": 8,
 				"AttUnitSiegeDef": "Swordsman",
-				"AttUnitSiegeDefMax": 24,
+				"AttUnitSiegeDefMax": 8,
 				"AttUnitSiegeDefGroupsCount": 1,
 				"AttUnitMain1": "Swordsman",
 				"AttUnitMain2": "Swordsman",
 				"AttUnitMain3": "Swordsman",
 				"AttUnitMain4": "Swordsman",
-				"AttMaxDefault": 320,
+				"AttMaxDefault": 160,
 				"AttMainGroupsCount": 2,
 				"TargetChoice": "Closest"
 			}
@@ -2832,7 +3209,7 @@ Below is comparison between vanilla and stsw for every AI.
 				"MinimumGoodsRequiredAfterTrade": 0,
 				"DoubleRationsFoodThreshold": 0,
 				"MaxWood": 72,
-				"MaxStone": 48,
+				"MaxStone": 72,
 				"MaxResourceOther": 12,
 				"MaxEquipment": 16,
 				"MaxBeer": 8,
@@ -2933,28 +3310,28 @@ Below is comparison between vanilla and stsw for every AI.
 				"Unknown142": 0,
 				"AttMaxEngineers": 26,
 				"AttDiggingUnit": "EuropArcher",
-				"AttDiggingUnitMax": 64,
+				"AttDiggingUnitMax": 48,
 				"AttUnitVanguard": "EuropArcher",
-				"AttUnitVanguardMax": 384,
+				"AttUnitVanguardMax": 240,
 				"AttMaxAssassins": 0,
 				"AttMaxLaddermen": 0,
 				"AttMaxTunnelers": 0,
 				"AttUnitPatrol": "EuropArcher",
-				"AttUnitPatrolMax": 16,
+				"AttUnitPatrolMax": 96,
 				"AttUnitPatrolGroupsCount": 1,
 				"AttUnitBackup": "None",
 				"AttUnitBackupMax": 0,
 				"AttUnitBackupGroupsCount": 0,
 				"AttUnitEngage": "Swordsman",
-				"AttUnitEngageMax": 128,
+				"AttUnitEngageMax": 80,
 				"AttUnitSiegeDef": "Monk",
-				"AttUnitSiegeDefMax": 48,
+				"AttUnitSiegeDefMax": 16,
 				"AttUnitSiegeDefGroupsCount": 1,
 				"AttUnitMain1": "Monk",
 				"AttUnitMain2": "Monk",
 				"AttUnitMain3": "Monk",
 				"AttUnitMain4": "Monk",
-				"AttMaxDefault": 640,
+				"AttMaxDefault": 320,
 				"AttMainGroupsCount": 2,
 				"TargetChoice": "Closest"
 			}
