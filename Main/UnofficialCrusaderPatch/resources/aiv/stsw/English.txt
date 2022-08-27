@@ -64,6 +64,33 @@ Below is list of buildings for every AI.
 	-Low crenels (some castles)
 	-Stairs
 	
+-Nazir (#12 in AI ranking):
+	-3x Stockpile
+	-1x Granary
+	-1x Trading post
+	-1x Mercenary post
+	-1x Engineer guild
+	-1x Oil smelter
+	-7x House
+	-3x Well
+	-2x Windmill
+	-10x Bakery
+	-2x Brewery
+	-2x Inn
+	-20x Good stuff (+4 to popularity)
+	-6x Tower1
+	-2x Tower5 (2 mangonels)
+	-2x Small gatehouse
+	-High walls
+	-High crenels
+	-Low walls
+	-Low crenels
+	-Stairs (usually)
+	-1x Drawbridge (usually)
+	-Moat
+	-Killing pits
+	-Pitch
+	
 -Marshal (#13 in AI ranking):
 	-2x Stockpile
 	-1x Granary
@@ -79,7 +106,7 @@ Below is list of buildings for every AI.
 	-2x Fletcher
 	-2x Blacksmith
 	-2x Armourer
-	-8x Stables
+	-6x Stables
 	-5x Good stuff (+1 to popularity)
 	-4x Tower3
 	-3x Small gatehouse
@@ -88,3 +115,4 @@ Below is list of buildings for every AI.
 	-Stairs
 	-2x Drawbridge (usually)
 	-Moat
+	-Killing pits

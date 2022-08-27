@@ -423,14 +423,14 @@ Below is comparison between vanilla and stsw for every AI.
 	-SiegeEngine None => 3 Catapult, 4 FireBallista (AttMaxEngineers 0 => 16)
 	-AttDiggingUnit 20 Slave => 27 Slave (6% of total attack force)
 	-AttUnitVanguard None => 135 ArabArcher (30% of total attack force)
-	-AttMaxAssassins 40 => 144 (32% of total attack force)
+	-AttMaxAssassins 40 => 54 (12% of total attack force)
 	-AttMaxLaddermen 0 => 0
 	-AttMaxTunnelers 0 => 0
 	-AttUnitPatrol None => None
 	-AttUnitBackup None => None
 	-AttUnitEngage None => 45 Assassin (10% of total attack force)
 	-AttUnitSiegeDef None => 9 Assassin (2% of total attack force)
-	-AttUnitMain 200 Assassin => 90 Assassin (20% of total attack force)
+	-AttUnitMain 200 Assassin => 180 Assassin (40% of total attack force)
 	
 -Sheriff (#6 in AI ranking):
 	-MaxQuarries 3 => 3
@@ -2785,7 +2785,7 @@ Below is comparison between vanilla and stsw for every AI.
 				"AttDiggingUnitMax": 27,
 				"AttUnitVanguard": "ArabArcher",
 				"AttUnitVanguardMax": 135,
-				"AttMaxAssassins": 144,
+				"AttMaxAssassins": 54,
 				"AttMaxLaddermen": 0,
 				"AttMaxTunnelers": 0,
 				"AttUnitPatrol": "None",
@@ -2803,7 +2803,7 @@ Below is comparison between vanilla and stsw for every AI.
 				"AttUnitMain2": "Assassin",
 				"AttUnitMain3": "Assassin",
 				"AttUnitMain4": "Assassin",
-				"AttMaxDefault": 90,
+				"AttMaxDefault": 180,
 				"AttMainGroupsCount": 2,
 				"TargetChoice": "Closest"
 			}
