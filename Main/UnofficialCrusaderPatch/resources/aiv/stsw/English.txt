@@ -72,20 +72,18 @@ Below is list of buildings for every AI.
 	-1x Engineer guild
 	-1x Oil smelter
 	-7x House
-	-3x Well
+	-2x Well
 	-2x Windmill
-	-10x Bakery
+	-8x Bakery
 	-2x Brewery
 	-2x Inn
 	-20x Good stuff (+4 to popularity)
+	-2x Tower3
 	-6x Tower1
-	-2x Tower5 (2 mangonels)
 	-2x Small gatehouse
-	-High walls
-	-High crenels
 	-Low walls
 	-Low crenels
-	-Stairs (usually)
+	-Stairs
 	-1x Drawbridge (usually)
 	-Moat
 	-Killing pits
@@ -113,6 +111,5 @@ Below is list of buildings for every AI.
 	-High walls
 	-High crenels
 	-Stairs
-	-2x Drawbridge (usually)
 	-Moat
 	-Killing pits
