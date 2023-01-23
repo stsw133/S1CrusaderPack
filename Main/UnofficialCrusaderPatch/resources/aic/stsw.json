@@ -33,7 +33,7 @@
 	-All AIs DefSiegeEngineBuildDelay set to 4
 	-All AIs DefWalls set to 87.5% of DefTotal
 	-All AIs RaidUnitsRandom set to 25% of RaidUnitsBase
-	-All AIs RaidRetargetDelay set to 4 (if only melee), 20 (if only ranged) or 12 (if both)
+	-All AIs RaidRetargetDelay set to 4 (if melee only) and 20 (for the rest)
 	-All AIs AttForceSupportAllyThreshold set to 0
 	-All AIs AttForceRandom set to 20% of AttForceBase
 	-All AIs CowThrowInterval set to 120
@@ -415,7 +415,7 @@ Below is comparison between vanilla and stsw for every AI.
 	-SortieUnitMelee 15 ArabArcher => 9 Assassin
 	-DefDiggingUnit 60 Slave => 9 Slave
 	-DefTotal 80 => 72 (DefWalls 80 => 63)
-	-DefUnit 100% ArabArcher => 75% ArabArcher, 12.5% Assassin, 12.5% FireThrower
+	-DefUnit 100% ArabArcher => 87.5% ArabArcher, 12.5% Assassin
 	-RaidUnitBase 5 => 24 (RaidUnitsRandom 5 => 6)
 	-RaidUnit 100% Assassin => 100% Assassin
 	-HarassingSiegeEngine None => 3 FireBallista
@@ -423,12 +423,12 @@ Below is comparison between vanilla and stsw for every AI.
 	-SiegeEngine None => 3 Catapult, 4 FireBallista (AttMaxEngineers 0 => 16)
 	-AttDiggingUnit 20 Slave => 27 Slave (6% of total attack force)
 	-AttUnitVanguard None => 135 ArabArcher (30% of total attack force)
-	-AttMaxAssassins 40 => 54 (12% of total attack force)
+	-AttMaxAssassins 40 => 90 (20% of total attack force)
 	-AttMaxLaddermen 0 => 0
 	-AttMaxTunnelers 0 => 0
 	-AttUnitPatrol None => None
 	-AttUnitBackup None => None
-	-AttUnitEngage None => 45 Assassin (10% of total attack force)
+	-AttUnitEngage None => 9 Assassin (2% of total attack force)
 	-AttUnitSiegeDef None => 9 Assassin (2% of total attack force)
 	-AttUnitMain 200 Assassin => 180 Assassin (40% of total attack force)
 	
@@ -825,7 +825,7 @@ Below is comparison between vanilla and stsw for every AI.
 				"HarassingSiegeEngine7": "None",
 				"HarassingSiegeEngine8": "None",
 				"HarassingSiegeEnginesMax": 2,
-				"RaidRetargetDelay": 12,
+				"RaidRetargetDelay": 20,
 				"AttForceBase": 35,
 				"AttForceRandom": 7,
 				"AttForceSupportAllyThreshold": 0,
@@ -1177,7 +1177,7 @@ Below is comparison between vanilla and stsw for every AI.
 				"HarassingSiegeEngine7": "FireBallista",
 				"HarassingSiegeEngine8": "FireBallista",
 				"HarassingSiegeEnginesMax": 8,
-				"RaidRetargetDelay": 12,
+				"RaidRetargetDelay": 20,
 				"AttForceBase": 100,
 				"AttForceRandom": 20,
 				"AttForceSupportAllyThreshold": 0,
@@ -1705,7 +1705,7 @@ Below is comparison between vanilla and stsw for every AI.
 				"HarassingSiegeEngine7": "None",
 				"HarassingSiegeEngine8": "None",
 				"HarassingSiegeEnginesMax": 1,
-				"RaidRetargetDelay": 12,
+				"RaidRetargetDelay": 20,
 				"AttForceBase": 30,
 				"AttForceRandom": 6,
 				"AttForceSupportAllyThreshold": 0,
@@ -2737,7 +2737,7 @@ Below is comparison between vanilla and stsw for every AI.
 				"DefUnit1": "ArabArcher",
 				"DefUnit2": "ArabArcher",
 				"DefUnit3": "ArabArcher",
-				"DefUnit4": "FireThrower",
+				"DefUnit4": "ArabArcher",
 				"DefUnit5": "ArabArcher",
 				"DefUnit6": "ArabArcher",
 				"DefUnit7": "ArabArcher",
@@ -2785,7 +2785,7 @@ Below is comparison between vanilla and stsw for every AI.
 				"AttDiggingUnitMax": 27,
 				"AttUnitVanguard": "ArabArcher",
 				"AttUnitVanguardMax": 135,
-				"AttMaxAssassins": 54,
+				"AttMaxAssassins": 90,
 				"AttMaxLaddermen": 0,
 				"AttMaxTunnelers": 0,
 				"AttUnitPatrol": "None",
@@ -2795,7 +2795,7 @@ Below is comparison between vanilla and stsw for every AI.
 				"AttUnitBackupMax": 0,
 				"AttUnitBackupGroupsCount": 0,
 				"AttUnitEngage": "Assassin",
-				"AttUnitEngageMax": 45,
+				"AttUnitEngageMax": 9,
 				"AttUnitSiegeDef": "Assassin",
 				"AttUnitSiegeDefMax": 9,
 				"AttUnitSiegeDefGroupsCount": 1,
@@ -3098,9 +3098,9 @@ Below is comparison between vanilla and stsw for every AI.
 				"RaidUnitsRandom": 3,
 				"RaidUnit1": "Knight",
 				"RaidUnit2": "EuropArcher",
-				"RaidUnit3": "None",
-				"RaidUnit4": "None",
-				"RaidUnit5": "None",
+				"RaidUnit3": "EuropArcher",
+				"RaidUnit4": "EuropArcher",
+				"RaidUnit5": "EuropArcher",
 				"RaidUnit6": "None",
 				"RaidUnit7": "None",
 				"RaidUnit8": "None",
@@ -3113,7 +3113,7 @@ Below is comparison between vanilla and stsw for every AI.
 				"HarassingSiegeEngine7": "None",
 				"HarassingSiegeEngine8": "None",
 				"HarassingSiegeEnginesMax": 2,
-				"RaidRetargetDelay": 12,
+				"RaidRetargetDelay": 20,
 				"AttForceBase": 40,
 				"AttForceRandom": 8,
 				"AttForceSupportAllyThreshold": 0,
@@ -3289,7 +3289,7 @@ Below is comparison between vanilla and stsw for every AI.
 				"HarassingSiegeEngine7": "None",
 				"HarassingSiegeEngine8": "None",
 				"HarassingSiegeEnginesMax": 6,
-				"RaidRetargetDelay": 12,
+				"RaidRetargetDelay": 20,
 				"AttForceBase": 80,
 				"AttForceRandom": 16,
 				"AttForceSupportAllyThreshold": 0,

@@ -63,6 +63,33 @@ Below is list of buildings for every AI.
 	-Low walls (some castles)
 	-Low crenels (some castles)
 	-Stairs
+
+-Phillip (#11 in AI ranking):
+	-2x Stockpile
+	-1x Granary
+	-1x Armoury
+	-1x Trading post
+	-1x Barracks
+	-1x Engineer guild
+	-7x House
+	-2x Well
+	-1x Cathedral
+	-1x Church
+	-2x Fletcher
+	-2x Poleturner
+	-3x Armourer
+	-1x Blacksmith
+	-30x Good stuff (+5 to popularity)
+	-2x Tower4
+	-1x Big gatehouse
+	-1x Small gatehouse
+	-High walls
+	-High crenels
+	-Low walls
+	-Stairs
+	-1x Drawbridge
+	-Moat
+	-2x Dog cage
 	
 -Nazir (#12 in AI ranking):
 	-3x Stockpile
